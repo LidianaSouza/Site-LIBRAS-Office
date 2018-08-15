@@ -1,0 +1,1 @@
+header{background-image:url("../images/fundo-slide-pagina-inicial.jpg")}header:before,header:after{content:" ";display:table}header:after{clear:both}header .logo{float:left}header .logo img{width:100%;heigth:100%}header .links{float:right}header .links nav ul li{display:inline-block}header .links nav ul li a{color:#fff;text-transform:none}
