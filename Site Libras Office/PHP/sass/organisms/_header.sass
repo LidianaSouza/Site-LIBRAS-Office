@@ -1,34 +1,57 @@
 header
 	+clearfix
+	min-height: 800px
+
 
 	background:
-		image: url('../images/fundo-slide-pagina-inicial.jpg')
-		//position:
-		//attachment:
-		//size:
+		color: $laranja-opaco
+		//image: url('../images/fundo-slide-pagina-inicial.jpg')
+		position: top center
+		repeat: no-repeat
+		attachment: fixed
+		size: cover
 
 
 	.logo
 		float: left
-		
-		img
-			width: 100%
-			heigth: 100%
+		margin: 32px 0 0 
 
-	.links
+		img
+			width: 219px
+			heigth: 103px
+
+	nav
 		float: right
-		
-		nav
-			ul
-				li
-					display: inline-block
-					a
-						color: $branco
-						text-transform: none
+		margin: 40px 0 0
+		+breakpoint($tablet)
+			display: none
+		+breakpoint($celular)
+			display: none
+
+		ul
+			li
+				display: inline-block
+				margin: 0 22px 0 0
+				a
+					color: $branco
+					text-transform: none
 		.social
 
 	h1
+		clear: both
+		margin: 415px 0 7px		!important
+		text-transform: uppercase
+		font-size: 47px
+		color: $branco
+		+breakpoint($celular)
+			+font-size(60px) 
 
 	p
+		margin: 0 0 54px
+		font-size: 25px
+		font-style: italic
+		color: $cinza-medio
+		+breakpoint($celular)
+			+font-size(35px)
 
 	a

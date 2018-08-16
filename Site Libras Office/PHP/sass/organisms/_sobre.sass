@@ -1,0 +1,35 @@
+section.descricao
+
+	.description
+		margin: 150px 0 150px
+		text-align: center
+
+		h2
+			margin: 0 0 30px
+		p
+			line-height: 30px
+
+
+section.sobre
+	margin: 0 0 48px
+	
+	.itens
+		+flexbox
+		text-align: center
+		//width: 100px
+		+justify-content(space-around)
+
+
+		p
+			line-height: 30px
+
+
+	.textos
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+
+
+	.icones
+	    text-decoration: none !important
+	    font-size: 97px
+	    color: $cinza-claro
