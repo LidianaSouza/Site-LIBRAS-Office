@@ -9,8 +9,21 @@ section.s-media
 		
 		li
 			font-size: 97px
+			
+			a
+				text-decoration: none 	!important
+				color: $cinza-claro		!important
 
+				+transition(.5s)
+				&:hover,
+				&:focus
+					text-decoration: none 	!important
+					color: $laranja !important
+			
+			/*
 			.icones
 				//+transition(.5s)
-			    text-decoration: none !important
-			    color: $laranja-opaco
+			    //text-decoration: none !important
+			    color: #ff3f00	!important*/
+
+
