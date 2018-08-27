@@ -7,8 +7,12 @@ section.cooperate
 		+align-items(center)
 		+justify-content(space-around)
 
-		background-color: $cinza-colaborar
-		
+		background-color: $cinza-claro
+		//background:
+		//	image: url('../images/fundo-slide-pagina-inicial.jpg')
+
+
+
 		text-align: center
 		font-size: 26px
 
@@ -17,18 +21,24 @@ section.cooperate
 		
 
 		p
+			display: inline-block 		!important
 			color: $branco
-			margin: 100px 0 100px
+			//margin: 100px 0 100px
 		
-		a 
+		.botao-simples	
+			margin: 20px 0 0 		!important
 			text-decoration: none 	!important
 			padding: 10px 30px 10px 30px
-			border: 1px solid $branco
+			border: 2px solid $cinza-colaborar
 			width: 50px		!important
 			font-size: 20px
-			color: $branco
+			color: $cinza-colaborar
 
-	
+			&:hover,
+			&:focus
+				text-decoration: none 		!important
+				color: $branco
+				border: 2px solid $branco
 
 /*
 	display: flex 	!important	

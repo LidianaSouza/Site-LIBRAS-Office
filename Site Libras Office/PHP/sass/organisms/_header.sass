@@ -1,37 +1,50 @@
 header
 	+clearfix
-	min-height: 800px
+	min-height: 805px
 
 
 	background:
 		//color: $laranja-opaco
-		image: url('../images/fundo-slide-pagina-inicial.jpg')
+		image: url('../images/fundo5-slide-pagina-inicial.jpg')
 		position: top center
 		repeat: no-repeat
 		attachment: fixed
 		size: cover
 
-
+	
 	.logo
+		position: fixed
 		float: left
-		margin: 32px 0 0 
+		//margin: 32px 0 0
+		margin: -6px 0 0  
+
 
 		img
 			width: 219px
-			heigth: 103px
+			heigth: 103px			//imagem logo
 
-	nav
-		float: right
-		margin: 40px 0 0
+	.navigation
+		height: 90px		!important
+		width: 100%
+
+		background: $laranja
+		position: fixed
+		right: 0 				//mantem a navbar no top enquando scrolling
+		
+		padding: 35px 30px 0 
 		+breakpoint($tablet)
 			display: none
 		+breakpoint($celular)
 			display: none
 
+	nav
 		ul
 			li
 				display: inline-block
 				margin: 0 22px 0 0
+
+				float: right
+
 				a
 					color: $branco
 					text-transform: none
@@ -40,8 +53,7 @@ header
 					&:hover,
 					&:focus
 						text-decoration: none 	!important
-						color: $laranja
-		.social
+						color: $amarelo
 
 	h1
 		clear: both
@@ -56,8 +68,6 @@ header
 		margin: 0 0 54px
 		font-size: 25px
 		font-style: italic
-		color: $cinza-medio
+		color: $branco 						//$cinza-medio
 		+breakpoint($celular)
 			+font-size(35px)
-
-	a
