@@ -3,10 +3,15 @@ section.s-media
 	.social-media
 		+flexbox
 		+align-items(center)
-		//text-align: center
+		text-align: center
 		+justify-content(space-around)
 		margin: 124px 0 124px
 		
+
+		+breakpoint($tablet)
+			display: block
+
+
 		li
 			font-size: 97px
 			

@@ -1,0 +1,52 @@
+@import organisms/social-media
+@import organisms/header
+
+@import atoms/botao-icone
+@import atoms/botao-generico
+
+header
+	+clearfix
+	min-height: 130px 	!important
+
+//Barra de navegação
+.navigation
+	position: fixed 	!important
+	background: $azul 		!important
+	z-index: 9
+
+//Mapa do site
+.sitemap
+	span
+		color: $azul
+
+	color: $cinza-claro
+
+//Corpo de conteudo do site
+.conteudo
+	margin: 0 -14.5px 0
+	+make-sm-column(8)
+	background:
+		color: 
+
+.sidebar
+	+make-sm-column(4)
+	+justify-content(space-around)
+	height: 500px
+	background:
+		color: 
+
+.info
+	font-style: italic
+	color: $cinza-claro
+
+.sos
+	color: $laranja
+
+.cf-item
+	color: $azul
+
+p
+	color: $cinza-paragrafo
+
+h5
+	color: $laranja 	!important

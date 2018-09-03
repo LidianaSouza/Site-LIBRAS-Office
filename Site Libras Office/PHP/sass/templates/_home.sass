@@ -1,5 +1,108 @@
-@import organisms/sobre
 @import organisms/social-media
-@import organisms/colaborar
-
+@import organisms/header
 @import atoms/botao-download
+
+
+//Ajustar para slider posteriormente
+header	
+	background:
+		//color: $laranja-opaco
+		image: url('../images/fundo5-slide-pagina-inicial.jpg')
+		position: top center
+		repeat: no-repeat
+		attachment: fixed
+		size: cover
+
+
+//Seção de descrição do projeto
+section.descricao
+
+	.description
+		margin: 150px 0 150px
+		text-align: center
+
+		h2
+			margin: 0 0 30px
+		p
+			line-height: 30px
+
+//Seção sobre pontos / aspectos do projeto
+section.sobre
+	margin: 0 0 48px
+
+	.itens
+
+		+flexbox
+		text-align: center
+		//width: 100px
+		+justify-content(space-around)
+		
+		+breakpoint($tablet)
+			display: inline-block
+
+		p
+			line-height: 30px
+
+
+	.textos
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+
+
+	.icones
+	    text-decoration: none !important
+	    font-size: 97px
+	    color: $cinza-claro
+
+
+//Seção colaborar
+section.cooperate
+
+	margin: 100px 0 0 
+
+	.colaborar
+		+flexbox
+		+align-items(center)
+		+justify-content(space-around)
+
+		+breakpoint($tablet)
+			font-size: 18px
+
+		//background-color: $cinza-claro
+		background:
+			image: url('../images/fundo-slide-pagina-inicial.jpg')
+			repeat: no-repeat
+			size: cover
+			//attachment: fixed
+
+
+		text-align: center
+		font-size: 26px
+
+		height: 400px
+
+		
+
+		p
+			display: inline-block 		!important
+			color: $branco
+
+			//margin: 100px 0 100px
+		
+		.botao-simples	
+			margin: 20px 0 0 		!important
+			text-decoration: none 	!important
+			padding: 10px 30px 10px 30px
+			border: 2px solid $azul
+			width: 50px		!important
+			font-size: 20px
+			color: $branco
+			background-color: $azul
+
+
+			&:hover,
+			&:focus
+				text-decoration: none 		!important
+				color: $branco
+				border: 2px solid $laranja
+				background-color: $laranja

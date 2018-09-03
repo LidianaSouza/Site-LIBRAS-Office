@@ -3,40 +3,38 @@ header
 	min-height: 805px
 
 
-	background:
-		//color: $laranja-opaco
-		image: url('../images/fundo5-slide-pagina-inicial.jpg')
-		position: top center
-		repeat: no-repeat
-		attachment: fixed
-		size: cover
-
-	
+	//Logo do LIBRAS Office				*De preferencia SVG pra manipulação de cenas de rearranjo
 	.logo
 		position: fixed
 		float: left
 		//margin: 32px 0 0
 		margin: -6px 0 0  
 
-
 		img
 			width: 219px
-			heigth: 103px			//imagem logo
+			heigth: 103px
+	
 
+
+
+	//Barra de navegação
 	.navigation
 		height: 90px		!important
 		width: 100%
 
 		background: $laranja
-		position: fixed
+		position: fixed 		
 		right: 0 				//mantem a navbar no top enquando scrolling
 		
-		padding: 35px 30px 0 
+		padding: 35px 30px 0  	//otimização de resolução para dispositivos móveis
 		+breakpoint($tablet)
 			display: none
 		+breakpoint($celular)
 			display: none
+	
 
+
+	//Configurações gerais barra de navegação
 	nav
 		ul
 			li
@@ -54,7 +52,9 @@ header
 					&:focus
 						text-decoration: none 	!important
 						color: $amarelo
+	
 
+	//Títulos
 	h1
 		clear: both
 		margin: 415px 0 7px		!important
@@ -64,6 +64,8 @@ header
 		+breakpoint($celular)
 			+font-size(60px) 
 
+
+	//Parágrafos
 	p
 		margin: 0 0 54px
 		font-size: 25px
